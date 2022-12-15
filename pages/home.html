@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Fintech app</title>
+    <link rel="shortcut icon" href="../images/logoImage.png"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/scripts.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  </head>
+
+  <script>
+
+    window.onload = function(e){
+        showBilling();
+        handleGreetings();
+        handleName();
+    } 
+
+  </script>
+  <body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <div style="font-weight: bold;" class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuItems" aria-controls="menuItems" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="padding-top: 10px;" class="collapse navbar-collapse" id="menuItems">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="purchases.html">Compras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="creditCards.html">Cartões</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="infos.html" onclick="">Informações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="logout(); return false;">Sair da conta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrappContainer">
+
+        <div class="meetingContainer">
+            <div id="userName"></div>
+            <div id="greeting"></div>
+        </div>
+
+        <div class="billingContainer">
+            <div>
+                <div>Saldo</div>
+                <div class="billingValue">R$ 1.000,00</div>
+            </div>
+        </div>
+
+        <div id="billingsContainer"></div>
+
+    </div>
+
+
+  </body>
+</html>
